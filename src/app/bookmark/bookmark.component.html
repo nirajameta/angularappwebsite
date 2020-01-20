@@ -1,0 +1,118 @@
+<section class="welcome_area" style="padding-bottom:60px">
+      
+        <div class="container overtext">
+           <div class="row welcome_inner">
+              <div class="col-lg-12" style="position:relative"> 
+                 <div class="welcome_img">
+                    <img class="img-fluid" src="assets/img/bookmark_banner/group-12@2x.jpg" alt="" style="width:100%; height:468px !important">
+                 </div>
+                 <div class="centered_banner"><p class="bannerheader" style="color:#ffffff">Bookmarks</p>
+                    <p class="bannertext" style="width:577px;color:#ffffff">We, at the Eight Way, have developed a team that has expertise and experience in Vastu/Energy ratings to provide our consumers with the most accurate results.</p>
+                </div>
+    
+                <div class="overlapdiv_bookmark">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-3" *ngFor="let item of proprtyName">
+                            <div class="top-left"><img src="assets/img/bookmark_icon/group-8-copy.png"></div>
+                            <div class="top-right1">
+                                
+                                <img src="assets/img/rank_icon/group.png" style="width: 60px;
+                                ">
+                                <p style="margin-top:-40px;">8/10</p>
+                            </div>
+                            <div class="jumbotron text-center cardtable1">
+
+                                    <h5>{{item.name}}</h5>
+                                    <h5>&#8377; 1.4 Cr</h5>
+                                    <img src = "{{item.img}}" style="width: 100px;
+                                    height: 100px;"> 
+                                    <p style="border:none;margin-top:10px">3 BHK Builder Floor 2600 sqft
+                                       for rent in DefenLight-up-your-interice Colony, Ahmedabad</p>
+                                    <table style="margin-top:10px">
+                                            <tr>
+                                               <td>
+                                                     <p>5000 Sq</p>
+                                               </td>
+                                               <td>
+                                                     <p>3 and 4 BHK</p>
+                                               </td>
+                                               <td>
+                                                     <p>5000 Sq</p>
+                                               </td>
+                                            </tr>
+              
+                                            <tr>
+                                                  <td>
+                                                        <p>5000 Sq</p>
+                                                  </td>
+                                                  <td>
+                                                        <p>Rate : 5000 mm</p>
+                                                  </td>
+                                                 
+                                            </tr>
+              
+                                           
+                                        </table>
+                            </div>
+
+                            <div class="bottom-left"><button class="btn btn-default btnpro" type="submit"><span class="bookmark_btn">View Properties</span></button></div>
+
+                        </div>
+
+                       
+                      
+                     
+                        
+                    </div>
+                    
+       
+                </div>
+                
+              </div>
+             </div>
+        </div>
+    
+    </section>
+
+    <div class="pparea">
+         <h1 style="box-shadow:none;height:0">Other Properties Related to your Search</h1>
+         <div id="container1" >
+            <div
+            ng2-carouselamos
+            class="slides-wrapper"
+            [items]="images"
+            [width]="980"
+            [$prev]="prev"
+            [$next]="next"
+            [$item]="item">
+         </div>
+         <ng-template #prev>
+            <img src="assets/img/prev_icon/previous.png" id="left"  style="width: 50px;
+               height: 50px;">
+         </ng-template>
+         <ng-template #next>
+            <img src="assets/img/next_icon/next.png" id="right" style="width: 50px;
+               height: 50px;" >
+         </ng-template>
+         <ng-template #item let-item let-i="index">
+            <div class="slide-items">
+              <p style="text-align:center; font-family: Prata;
+              font-size: 15px;text-transform: capitalize;color: #000000;font-weight: normal;">Lorem Ipsum<br>{{item.title }}</p>
+               <!-- <p style="text-align:center">{{item.title }}</p> -->
+               <div class="carousel-content"><span>Vastu Rating</span><br><span style="font-size: 16px; font-weight: 500">{{item.rating}}/10</span></div>
+               <img src="{{ item.name }}">
+             
+            </div>
+         </ng-template>
+      </div>
+    
+    
+      <app-contactinfo></app-contactinfo>
+
+
+   
+   
+
+
+
+  

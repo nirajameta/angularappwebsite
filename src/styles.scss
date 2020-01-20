@@ -1,1 +1,107 @@
-/* You can add global styles to this file, and also import other style files */
+
+#container1 {
+    width: 96%;
+    margin: 5em auto;
+    
+    
+    .ng2-carouselamos-container{
+        width: 90%;
+        min-height:288px;
+        margin: auto;
+        
+    }
+        .slide-items{
+        margin-right: 25px;
+
+      
+        
+        img{
+            width: 174px;
+            border-radius: 200px;
+        }
+        @media only screen and (max-width: 360px)  {
+            img{
+                width: 160px;
+                margin-left:5px;
+               
+            }
+        }   
+        @media only screen and (min-width: 410px) and (max-width: 450px)  {
+            img{
+                margin-left:20px;
+                width: 165px;
+                
+            }
+        }    
+        
+      
+        
+        .carousel-content {
+        min-width:12%;  
+        position: absolute;
+        bottom: -32px;
+        border-radius:10px;
+        text-align:center;
+        background-color:#ffdbc5;
+        padding:10px;
+        margin-left:3%;
+        // right: 1%;
+        z-index: 20;
+        color:black;
+        font-family: Prata;
+        font-size: 12px;
+        font-weight: normal;
+        // box-shadow: 0 10px 10px #ffdbc5 ;
+        }
+        @media only screen and (max-width: 375px)  {
+            .carousel-content{
+                margin-left:9%;
+               
+            }
+        } 
+        @media only screen and (min-width: 410px) and (max-width: 420px)  {
+            .carousel-content{
+                margin-left:11%;
+               
+            }
+        } 
+
+     
+        @media only screen and (min-width: 410px) and (max-width: 450px)  {
+            img{
+                margin-left:20px;
+                width: 165px;
+                border-radius: 200px;
+            }
+        }       
+        h2{
+           
+            height: 21px;
+            font-family: Prata;
+            font-size: 15px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.4;
+            letter-spacing: 0.42px;
+            text-align: center;
+            color: #000000;
+        }
+        
+    }
+    @media only screen and (max-width: 500px)  {
+        .slide-items{
+            margin-right: 18px;
+         }
+    }   
+
+    .ng2-carouselamos-wrapper{
+       width:980px !important;
+    }
+}
+
+
+
+
+    
+

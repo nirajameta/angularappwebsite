@@ -1,0 +1,48 @@
+@media screen and (min-width:768px){
+    .viewchange{
+        position:absolute;
+        width:50%;
+        top:40%;
+        left:20%;
+        transform: translateX(-20%);
+    }
+
+    .viewchange .tab-pane{
+        margin-top:30px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .viewchange{
+        position:absolute;
+        width:50%;
+        top:30%;
+        left:20%;
+        transform: translateX(-20%);
+    }
+    .viewchange .tab-pane{
+        margin-top:5px;
+    }
+}
+
+.nav-pills .nav-link1{
+    padding:0 30px;
+    font-family: Prata;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 3.07;
+    letter-spacing: 0.12px;
+    color: #000000;
+    
+  }
+  
+
+
+  .nav-pills .nav-link1.active{
+    padding:5px 30px;
+    border-radius: 20.5px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.24);
+    background-color: #ffffff;
+  }

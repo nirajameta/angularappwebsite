@@ -1,0 +1,62 @@
+<section class="p_20">
+    <div class="container contact">
+        <div class="row">
+            <h5>Talk to Us</h5>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="rectangle">
+                   
+                    <img src="assets/img/call.svg" style="width:37px;height:37px;margin:0 auto;display: block">
+                    
+                    <h3>Call Me</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <br>
+                    <div class="input-group mb-3" *ngIf = "displaydirection">
+                       <input type="text" class="form-control box" placeholder="Your mobile no">
+                       <div class="input-group-append" (click)="clickarrow()">
+                          <button class="btn btn-default buttonstyle" type="button"> <span class="fa fa-long-arrow-right"></span></button>  
+                       </div>
+                    </div>
+                    <div *ngIf = "!displaydirection">
+                        <h2>Thank you for contacting us. You shall soon receive a call from our team</h2>
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="col-md-4">
+                 <div class="rectangle">
+                        <img src="assets/img/chat.svg" style="width:37px;height:37px;margin:0 auto;display: block">
+                    
+                    <h3>Chat with Me</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <br>
+                    <div class="input-group mb-3">
+                       <input type="text" class="form-control box" placeholder="Your Email Address">
+                       <div class="input-group-append">
+                          <button class="btn btn-default buttonstyle" type="button"> <span class="fa fa-long-arrow-right"></span></button>  
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="rectangle">
+                        <img src="assets/img/email.svg" style="width:37px;height:37px;margin:0 auto;display: block">
+                    
+                        <h3>Leave a Message</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <br>
+                        <div class="input-group mb-3">
+                           <input type="text" class="form-control box" placeholder="Your message" style="height:70px">
+                           <div class="input-group-append">
+                              <button class="btn btn-default buttonstyle" type="button" style="line-height: 50px"> <span class="fa fa-long-arrow-right"></span></button>  
+                           </div>
+                        </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+

@@ -1,0 +1,83 @@
+    <div class="split left">
+        <div class="centered4">
+            
+            <h2>Find a place that adds life to your mind, body and soul.</h2>
+            
+        </div>
+    </div>
+    
+    <div class="split right">
+            <img src="assets/img/final.png" alt="" routerLink="/home"  style="padding:10px 0 0 10px;cursor: pointer;">
+
+
+            <!-- <a> signup</a>
+            <a> login</a> -->
+            <!-- <div class="desktopview">     
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#fec9a9 !important;border-radius:20px;padding:0 10px">
+                
+                    <div class="navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    
+                    
+                        <li  class="nav-item1">
+                            <a  class="nav-link1" style="color:black" routerLinkActive="activecss1"  routerLink="/login/loginmode">Login</a>
+                        </li>
+            
+                        <li  class="nav-item" >
+                            <a  class="nav-link1" style="color:black" routerLinkActive="activecss1"  routerLink="/login/signup">Sign up</a>
+                        </li>
+                    </ul>
+                    </div>
+                </nav>
+                
+            </div> -->
+
+            <!-- <div class="mobileview" >  
+                    <div style="width:60%;background-image: linear-gradient(295deg, #fec9a9, #ffdbc5); margin:0 auto;height:60px;line-height: 15px; border-radius: 20.5px;margin-top:5%">
+      
+                          <ul class="nav">
+                                  <li class="nav-item" style="padding:5px;margin-left:7px">
+                                    <a class="nav-link" routerLinkActive="activecss1" style="color:black" routerLink="/login/loginmode">Login</a>
+                                  </li>
+                                  <li class="nav-item" style="padding:5px 0">
+                                    <a class="nav-link" routerLinkActive="activecss1" style="color:black"  routerLink="/login/signup">Sign up</a>
+                                  </li>
+                          </ul>        
+                          
+                     </div> 
+       
+                     
+            </div> -->
+      
+
+            
+
+            
+
+            <div class="viewchange">
+                <!-- <router-outlet></router-outlet> -->
+                <ul class="nav nav-pills" role="tablist" style="background-color:#fec9a9 !important;border-radius:20px;padding:0 10px">
+                    <li class="nav-item" >
+                       <a class="nav-link1 active"  data-toggle="pill" href="#home">Login</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link1"  data-toggle="pill" href="#menu1">Signup</a>
+                    </li>
+                 </ul>
+
+                 <div class="tab-content">
+                    <div id="home" class="container tab-pane active">
+                        <app-loginmode></app-loginmode>
+                    </div>
+
+                    <div id="menu1" class="container tab-pane fade">
+                        <app-signup></app-signup>
+                    </div>
+                 </div>       
+
+            </div>
+
+            <div style="position:absolute;width:70%;bottom:1%;left:25%;transform: translateX(-25%);">
+                  <span class="loginfooter">*Lorem ipsum dolor sit amet, consectetur adipiscing elit, Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>  
+            </div>
+     </div>
