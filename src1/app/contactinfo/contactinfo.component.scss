@@ -1,0 +1,101 @@
+.contact h5{
+    padding-bottom:5%;
+    width: 546px;
+    height: 37px;
+    font-family: Prata;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: 0.84px;
+    text-align: center;
+    color: #000000;
+    margin: 0 auto;
+}
+
+.contact .rectangle{
+  padding:40px 15px 15px 25px;  
+  width: 378px;
+  height: 295px;
+  object-fit: contain;
+  border-radius: 37px;
+  box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.07);
+ // border: solid 3px #ffdbc5;
+  background-color: #ffffff;
+}
+
+.contact .rectangle:hover{
+  width: 378px;
+  height: 295px;
+  border: solid 3px #ffdbc5;
+  background-color: #ffffff;
+  box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.07);
+
+}
+
+.contact h3{
+  padding:15px 0 25px 0;
+  height: 24px;
+  font-family: Prata;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.39px;
+  text-align: center;
+  color: #000000;
+}
+
+.contact h2{
+  width: 300px;
+  height: 35px;
+  font-family: Prata;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: -0.15px;
+  text-align: center;
+  color: green;
+}
+
+.contact p{
+  width: 321px;
+  height: 35px;
+  font-family: Prata;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: -0.15px;
+  text-align: center;
+  color: #000000;
+}
+
+.contact .input-group {
+  width: 241px;
+  // height: 37px;
+  // box-shadow: 0 -10px 11px 0 rgba(0, 0, 0, 0.05);
+  border: 2px solid#000000;
+  background-color: #ffffff;
+  margin:0 auto;
+}
+
+.contact .btn{
+  
+  background-color: #ffffff;
+}
+
+.contact .input-group-append{
+ 
+  // border: 1px solid black;
+  border-width: 1px 1px 1px 2px;
+  border-style: solid;
+  border-color:#000000;
+  border-radius:0px;
+ 
+}

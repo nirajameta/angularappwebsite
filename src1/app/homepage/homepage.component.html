@@ -1,0 +1,395 @@
+<section class="welcome_area directionimg" style="padding-bottom:60px" >
+    <div class="container">
+     
+       <div class="row welcome_inner">
+          <div class="col-lg-5" style="padding-right:0 !important">
+             <div class="welcome_img">
+                <img class="img-fluid" src="assets/img/group2.jpg" alt="" style="width:100%; height:468px !important">
+             </div>
+          </div>
+
+          <div class="col-lg-7 p_left35" style="background-color:#ffffff !important; object-fit: contain;
+             box-shadow: 17px 0 36px 0 rgba(0, 0, 0, 0.07);">
+             <div class="welcome_text">
+               <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+                <h4 style="padding-bottom:15px;">Find a place that adds life to your mind, body and soul.</h4>
+
+
+                <div class="row">
+                   
+                   <div class="col-sm-8 p_no">
+                      <div class="wel_item">
+
+                     <div class="form-group">
+                         <div class="input-group mb-3" style="margin:0 auto">
+                           
+                           
+                            <input type="text" style="border-style: solid;
+                            border-width: 1px 0 1px 1px;
+                            border-color:black;border-radius: 0" class="form-control box1" class="form-control"  name="firstName" placeholder="Search Location, Project or Landmark" [(ngModel)]="model.firstName" #firstName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && firstName.invalid }" required>
+                              <div class="input-group-append">
+                                 <button class="btn btn-default"> <span class="fa fa-search"></span></button>  
+                              </div>
+
+                              
+
+                           </div>   
+                             
+                           <div *ngIf="f.submitted && firstName.invalid">
+                                 <div style="font-size: 12px; color:red" *ngIf="firstName.errors.required">Please enter a valid Location, Landmark or Project</div>
+                             </div>
+                         
+                         
+                     </div>    
+
+                   
+                      
+                     
+                     
+
+                      </div>
+                   </div>
+                
+                  </div>
+
+                  
+
+
+                <div class="row">
+                   <div class="col-sm-4 paddingremov">
+                      <div class="form-group">
+                         <select class="form-control borderco required" id="propertytype" name="propertytype"  [(ngModel)]="model.propertytype">
+                            <option [ngValue]="undefined" disabled selected hidden>Type of property</option>
+                            <option>Residential</option>
+                            <option>Commercial</option>
+                            <option>Flat</option>
+                            <option>Office Space</option>
+                         </select>
+                      </div>
+
+
+                   </div>
+                   <div class="col-sm-4 paddingremov">
+                      <div class="form-group">
+                         <select class="form-control borderco required" id="sel1">
+                            <option [ngValue]="undefined" disabled selected hidden >Budget</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                         </select>
+                      </div>
+                   </div>
+                </div>
+                <div class="row">
+                   <div class="col-sm-11">
+                      <hr style="box-shadow: 17px 0 36px 0 rgba(0, 0, 0, 0.07);
+                      background-color: #ffffff;">
+                   </div>
+                   <!-- <div class="col-sm-12">
+                      <p>Tell us which area you wish to search?</p>
+                      </div> -->
+                </div>
+                <div class="row">
+                   <div class="col-sm-12">
+                      <p style="font-size: 14px">Tell us which area you wish to search?</p>
+                   </div>
+                </div>
+                <div class="row citymargin">
+                   <div class="col-sm-12">
+                      <ul class="nav">
+                         <li class="nav-item">
+                            <a class="nav-link theme" href="#">Praladnagar</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link theme" href="#">Paldi</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link theme" href="#">Satellite</a>
+                         </li>
+                      </ul>
+                      <ul class="nav" style="margin-top:5px">
+                         <li class="nav-item">
+                            <a class="nav-link theme" href="#">Gurukul</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link theme" href="#">Praladnagar</a>
+                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link theme" href="#">Paldi</a>
+                         </li>
+                      </ul>
+                   </div>
+                </div>
+
+               </form>
+             </div>
+          </div>
+       
+        </div>
+       <div class="verticalhorizontal">
+          <img src="assets/img/cursor-icon/cursor-icon.png" alt="centered image" />
+          
+          
+       </div>
+    </div>
+ 
+ 
+ <div class="allowus_area">
+    <div class="container">
+       <div class="main_title">
+          <h2>Allow us to bring life to each corner of your space.</h2>
+          <p>Light up your interiors by having maximum no. of windows in the northern sides and invite financial prosperity, windows and large openings towards northeast walls invites good health and mental stability, concentration and peace of mind. </p>
+          <br>
+       </div>
+       
+       <div class="section_width" style="margin:0 auto;">
+          <div class="cardcontainer">
+             <div class="single_row">
+               <div class="flip-card">
+                  <div class="flip-card-inner justify-content-center ">
+                    <div class="flip-card-front">
+                     <div>
+                        <div class="card-body">
+                           <h3 class="card-title"><img src="assets/img/card_img/group.png" id="left"  style="width: 70px;
+                              height: 63px;"></h3>
+                           <br><br>
+                           <p class="card-text">Vastu for<br><span style="font-size:18px">Family</span>
+                           </p>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="flip-card-back">
+                     <div>
+                        <div class="card-body justify-content-center" >
+                           <h3 class="card-title"><p class="card-text">Vastu for<br><span style="font-size:18px">Harmony</span></h3>
+                          
+                           <span class="card-text fliptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</span>
+                          
+                        </div>
+                     </div>
+                     
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="single_row">
+               <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                     <div>
+                        <div class="card-body justify-content-center">
+                           <h3 class="card-title"><img src="assets/img/card2/zen.png" id="left"  style="width: 70px;
+                              height: 63px;"></h3>
+                           <br><br>
+                           <p class="card-text">Vastu for<br><span style="font-size:18px">Harmony</span>
+                           </p>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="flip-card-back">
+                     <div>
+                        <div class="card-body justify-content-center" >
+                           <h3 class="card-title"><p class="card-text">Vastu for<br><span style="font-size:18px">Harmony</span></h3>
+                          
+                           <span class="card-text fliptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</span>
+                          
+                        </div>
+                     </div>
+                     
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="single_row">
+               <div class="flip-card">
+                  <div class="flip-card-inner justify-content-center ">
+                    <div class="flip-card-front">
+                     <div>
+                        <div class="card-body">
+                           <h3 class="card-title"><img src="assets/img/hand/hand.png" id="left"  style="width: 70px;
+                              height: 63px;"></h3>
+                              <br><br>
+                           <p class="card-text">Vastu for<br><span style="font-size:18px">Finance</span>
+                           </p>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="flip-card-back">
+                     <div>
+                        <div class="card-body justify-content-center" >
+                           <h3 class="card-title"><p class="card-text">Vastu for<br><span style="font-size:18px">Harmony</span></h3>
+                          
+                           <span class="card-text fliptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</span>
+                          
+                        </div>
+                     </div>
+                     
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="single_row">
+               <div class="flip-card">
+                  <div class="flip-card-inner justify-content-center ">
+                    <div class="flip-card-front">
+                     <div>
+                        <div class="card-body">
+                           <h3 class="card-title"><img src="assets/img/st/stethoscope.png" id="left"  style="width: 70px;
+                              height: 63px;"></h3>
+                              <br><br>
+                           <p class="card-text">Vastu for<br><span style="font-size:18px">Health</span>
+                           </p>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="flip-card-back">
+                     <div>
+                        <div class="card-body justify-content-center" >
+                           <h3 class="card-title"><p class="card-text">Vastu for<br><span style="font-size:18px">Harmony</span></h3>
+                          
+                           <span class="card-text fliptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</span>
+                          
+                        </div>
+                     </div>
+                      
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+           
+             
+          </div>
+       </div>
+    </div>
+   </div>
+
+</section>
+ <!--================Properties Area =================-->
+ <div class="pparea" style="margin-top:4%; background: url('../img/rectangle_01.png') no-repeat;     
+ background-size: 93% 85%;
+ background-position: 50% 0%;">
+    <h1>Top 10 Vastu Rated Properties </h1>
+    <div id="container1" >
+       <div
+       ng2-carouselamos
+       class="slides-wrapper"
+       [items]="images"
+       [width]="980"
+       [$prev]="prev"
+       [$next]="next"
+       [$item]="item">
+    </div>
+    <ng-template #prev>
+       <img src="assets/img/prev_icon/previous.png" id="left"  style="width: 50px;
+          height: 50px;">
+    </ng-template>
+    <ng-template #next>
+       <img src="assets/img/next_icon/next.png" id="right" style="width: 50px;
+          height: 50px;" >
+    </ng-template>
+    <ng-template #item let-item let-i="index">
+       <div class="slide-items">
+         <p style="text-align:center; font-family: Prata;
+         font-size: 15px;text-transform: capitalize;color: #000000;font-weight: normal;">Lorem Ipsum<br>{{item.title }}</p>
+          <!-- <p style="text-align:center">{{item.title }}</p> -->
+          <div class="carousel-content"><span>Vastu Rating</span><br><span style="font-size: 16px; font-weight: 500">{{item.rating}}/10</span></div>
+          <img src="{{ item.name }}">
+          <!-- <div>
+             <h2 class="direction" style="margin-top:40px;">Direction:N<img src="assets/img/arrow.jpg" id="left"  style="width: 25px;
+                height: 23px;"></h2>
+          </div> -->
+       </div>
+    </ng-template>
+ </div>
+ <!--================End Properties Area =================-->
+ <section class="cities_area ">
+    <div class="container-fluid tocover" style="width:100%;padding-top:20px;">
+       <div class="main_title">
+          <h2>Featured Projects </h2>
+       </div>
+       <div class="adjustdiv">
+          <div class="single_row">
+             <img src="assets/img/path/icon1.png" id="left" class="adjust">
+             <span class="Lorem-Ipsum-Paldi-Copy-2">
+                <h4 >Lorem Ipsum</h4>
+                <p style="font-size: 14px">Paldi</p>
+             </span>
+             <img class="img-fluid imagewidth" src="assets/img/property1/bitmap-copy-5.jpg" alt="">
+            
+          </div>
+          <div class="single_row">
+             <img src="assets/img/path/icon1.png" id="left" class="adjust"  >
+             <span class="Lorem-Ipsum-Paldi-Copy-2 ">
+                <h4 >Lorem Ipsum</h4>
+                <p style="font-size: 14px">Praladnagar</p>
+             </span>
+             <img class="img-fluid imagewidth" src="assets/img/property2/bitmap.jpg" alt="">
+            
+          </div>
+          <div class="single_row">
+             <img src="assets/img/path/icon1.png" id="left" class="adjust">
+             <span class="Lorem-Ipsum-Paldi-Copy-2 ">
+                <h4>Lorem Ipsum</h4>
+                <p style="font-size: 14px">Paldi</p>
+             </span>
+             <img class="img-fluid imagewidth" src="assets/img/property3/bitmap.jpg" alt="">
+           
+          </div>
+          <div class="single_row">
+             <img src="assets/img/path/icon1.png" id="left" class="adjust"  >
+             <span class="Lorem-Ipsum-Paldi-Copy-2">
+                <h4 >Lorem Ipsum</h4>
+                <p style="font-size: 14px">Paldi</p>
+             </span>
+             <img class="img-fluid imagewidth" src="assets/img/property1/bitmap-copy-5.jpg" alt="">  
+                 
+          </div>
+          <div class="single_row">
+             <img src="assets/img/path/icon1.png" id="left" class="adjust"  >
+             <span class="Lorem-Ipsum-Paldi-Copy-2 ">
+                <h4 >Lorem Ipsum</h4>
+                <p style="font-size: 14px">Praladnagar</p>
+             </span>
+             <img class="img-fluid imagewidth" src="assets/img/property2/bitmap.jpg" alt="">
+            
+          </div>
+       </div>
+    </div>
+ </section>
+ <!--================Testimonials Area =================-->
+ <section style="margin-top:100px;">
+    <div class="container-fluid">
+       <div class="row testimonials_inner">
+          <div class="col-lg-6 testimonials_area">
+             <div class="testi_left_text">
+                <h4>Vastu Shastra</h4>
+                <p>Vastu shastra is a traditional Hindu system of architecture which literally translates to "science of architecture." These are texts found on the Indian subcontinent that describe principles of design, layout, measurements, ground preparation, space arrangement, and spatial geometry.</p>
+                <br><button type="button" class="btn btn-primary btn-block">Read More</button>
+             </div>
+          </div>
+          <div class="col-lg-6" style="background:#ffdbc5">
+             <div class="testi_left_text">
+                <h4>Today’s Tip</h4>
+                <p>Light up your interiors by having maximum no. of windows in the northern sides and invite financial prosperity, windows and large openings towards northeast walls invites good health and mental stability, concentration and peace of mind.</p>
+                <br> <button type="button" class="btn btn-primary btn-block">Read More</button>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+
+      <app-contactinfo></app-contactinfo>
+
+
+ 
+
+
+ 
+ <!--================End Clients Logo Area =================-->
+ <!--================ start footer Area  =================-->

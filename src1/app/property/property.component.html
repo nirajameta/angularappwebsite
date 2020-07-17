@@ -1,0 +1,309 @@
+<section class="welcome_area" style="padding-bottom:120px">
+      <div class="container overtext">
+         <div class="row welcome_inner">
+            <div class="col-lg-12" style="position:relative">
+               <div class="welcome_img">
+                  <img class="img-fluid" src="assets/img/outer_img/group-9@2x.jpg" alt="" style="width:100%; height:468px !important">
+               </div>
+               <div class="bottom-right" data-toggle="modal" data-target="#myModal"><img src="assets/img/filter/filter.png" style="width: 70px;
+                  height: 76px;"></div>
+               <!-- <div class="bottom-right"> <button type="button" class="btn btn-primary" >
+                  Open modal
+                  </button></div> -->
+               <div class="modal" id="myModal">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                           <h4 class="modal-title">Filters</h4>
+                           <br>
+                           <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                           <div class="container-fluid" style="padding-left:0">
+                              <ul class="nav nav-pills" role="tablist">
+                                 <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="pill" href="#home">Commercial</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#menu1">Residential</a>
+                                 </li>
+                              </ul>
+                              <!-- Nav pills -->
+                              <!-- Tab panes -->
+                              <div class="tab-content">
+                                 <div id="home" class="container tab-pane active">
+                                    <br>
+                                    <div class="row">
+                                       <div class="col-lg-4 col_1 text-left" >
+                                          <span>Amenities</span>
+                                             <ul style="list-style-type: none;padding-inline-start: 5px;padding-top:10px">
+                                                <li><label><input type="radio"   value="Balcony" name="sport"> Balcony</label></li>
+                                                <li> <label><input type="radio"  value="Toilet" name="sport"> Toilet</label></li>
+                                                <li><label><input type="radio"  value="Store"  name="sport"> Store Room</label></li>
+                                                <li> <label><input type="radio"  value="Lift" name="sport"> Lift</label></li>
+                                                <li> <label><input type="radio"  value="Stairs" name="sport"> Stairs</label></li>
+                                                <li><label><input type="radio"  value="Master" name="sport"> Master Bedroom</label></li>
+                                                <li><label><input type="radio"  value="Guest" name="sport"> Guest Room</label></li>
+                                                <li><label><input type="radio"  value="swimming" name="sport"> Swimming Pool</label></li>
+                                                
+                                             </ul> 
+
+                                            
+                                      
+                                      
+                                          </div>
+
+                                       
+                                       <div class="col-lg-4 text-left">
+                                          <div class="col_2">
+                                             <span>Price</span>
+                                                <!-- <p>Value: <input type="number" [(ngModel)]="value"></p> -->
+                                                <ng5-slider [(value)]="value" [options]="options"></ng5-slider>
+
+                                          </div>
+                                          <div class="col_2" style="margin-top:10px">
+                                             <span>Vastu / Energy Rating</span>
+                                             <!-- <ngb-rating [(rate)]="currentRate"></ngb-rating> -->
+                                             <div class="form-inline">
+ 
+                                                <input type="text"  style="color: transparent;text-shadow: 0 0 0 black;" name="email" value="6+">
+                                                
+                                                <input type="text"  style="color: transparent;text-shadow: 0 0 0 black;" name="email" value="7+">
+                                               
+                                                <input type="text"  style="color: transparent;text-shadow: 0 0 0 black;" name="email" value="8+">
+
+                                                <input type="text"  style="color: transparent;text-shadow: 0 0 0 black;" name="email" value="9+">
+                                               
+                                              </div>
+                                                
+                                               
+                                                <!-- Selected: <b>{{selected}}</b> -->
+                                               
+                                                
+                                                
+                                          </div>
+                                          <div class="col_2" style="margin-top:10px">
+                                             <p>Distance From</p>
+                                                <select class="col_4">
+                                                   <option value="volvo">PrahaladNagar</option>
+                                                   <option value="saab">Paldi</option>
+                                                   <option value="opel">PrahaladNagar</option>
+                                                   <option value="audi">Paldi</option>
+                                                </select>
+                                          </div>
+                                       </div>
+
+                                       <div class="col-lg-4 col_3 text-left" >
+                                             <span>BHK</span>
+                                             <ul style="list-style-type: none;padding-inline-start: 5px;padding-top:10px">
+                                                <li><label><input type="radio"  value="3BHK" name="work"> 3 BHK</label></li>
+                                                <li> <label><input type="radio" value="4BHK" name="work"> 4 BHK</label></li>
+                                                <li> <label><input type="radio" value="5BHK" name="work"> 5 BHK</label></li>
+                                                <li> <label><input type="radio"  value="6BHK" name="work"> 6 BHK</label></li>
+                                                <li> <label><input type="radio"  value="7BHK" name="work"> 7 BHK</label></li>
+                                             </ul>
+
+                                              <!-- <div style="width:80px; height:100px;margin:0 auto; line-height:100px ">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Apply</button>
+
+                                             </div> -->
+                                       </div>
+                                       
+
+                                    </div>
+                                 </div>
+
+                                 <div id="menu1" class="container tab-pane fade">
+                                   
+                                    <h3>Same as Commercial</h3>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                           <button type="button"  class="btn" data-dismiss="modal">Apply</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="overlapmap" style="top:420px;">     
+                  <div class="intouch">
+                     <div class="row inputfieldbox1">
+                        <div class="col-sm-5">
+                           <input type="text"  class="form-control box2 inputsize" style="border-color:black;border-radius: 0" placeholder="Search Location, Project or Landmark" name="email">
+                        </div>
+                        <div class="col-sm-3 margin_t">
+                           <div class="form-group">
+                              <select class="form-control borderco inputsize1">
+                                 <option [ngValue]="undefined" disabled selected hidden>Type of property</option>
+                                 <option>Residential</option>
+                                 <option>Commercial</option>
+                                 <option>Flat</option>
+                                 <option>Office Space</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-sm-3 margin_t1">
+                           <div class="form-group">
+                              <select class="form-control borderco inputsize1">
+                                 <option [ngValue]="undefined" disabled selected hidden>Budget</option>
+                                 <option>Residential</option>
+                                 <option>Commercial</option>
+                                 <option>Flat</option>
+                                 <option>Office Space</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-lg-8 tableclass">
+                           <table>
+                              <tr>
+                                 <td>
+                                    <span style="font-family: prata">
+                                    Sort By :
+                                    </span> 
+                                 </td>
+                                 <td>
+                                    <button class="btn btn-default btnmap" style="border-radius:20px"><span class="btn_txt">Recommended</span> </button>
+                                 </td>
+                                 <td>
+                                    <button class="btn btn-default btnmap"><span class="btn_txt">Vastu/Energy Rating</span></button>
+                                 </td>
+                                 <td> 
+                                    <button (click)="pricesort()" class="btn btn-default btnmap"><span class="btn_txt">Price</span></button>
+                                 </td>
+                                 <td> 
+                                    <button (click)="ratingsort()" class="btn btn-default btnmap"><span class="btn_txt">Rate/Sq</span></button>
+                                 </td>
+                              </tr>
+                           </table>
+                        </div>
+                        <div class="col-lg-12 smdevicebtn" style="margin-top:5px;">
+                           <button class="btn btn-default btnpro" type="submit"><span>Submit</span></button> 
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="welcome_area" style="padding-bottom:60px">
+      <div class="container txtforcard">
+         <h4>List of Properties</h4>
+         
+         <!-- <div style="min-height:500px;overflow: auto;"> -->
+         <div id="wrapper" class="clearfix" *ngFor="let item of displaylist let idx=index; let even=even" >
+              
+
+         <div id="first">
+            <div class="row">
+               <div class="col-lg-3 col-sm-3">
+                  <div class="cartcontent">
+                     
+                     <img src = "http://182.76.7.4:3000/{{item.prop_img_1_Path}}" style="width: 155px;
+                        height: 175px; padding: 28px 20px"> 
+                  </div>
+               </div>
+               <div class="col-lg-7 col-sm-7 cardtable">
+                  <h5>{{item.project_name}} | &#8377; {{item.rate}} Cr</h5>
+                  <table>
+                     <tr >
+                        <td>
+                           <p>{{item.bhk}} bhk</p>
+                        </td>
+                        <td>
+                           <p>Developer : Gala</p>
+                        </td>
+                        <td>
+                           <p>Rate :{{item.rate}}</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p>{{item.sq_feet}} Sq</p>
+                        </td>
+                      
+                     </tr>
+                  </table>
+                  <!-- <span>A magnificent newly built 3BHK Flat is available on rent in Defence Colony. bedroom with attached bathroom, kitchen, drawing dining room, two parking.</span> -->
+                  <span>{{item.remarks}}</span>
+               </div>
+            </div>
+            <!-- <div class="top-right"><img src="assets/img/bookmark.png" style="width: 20px;
+               height: 20px;"></div> -->
+            <div class="top-right" (click)="item.rowClicked = !item.rowClicked"><i class="fa fa-star-o" [style.background-color]="item.rowClicked ? 'yellow' : 'white'" style="font-size:20px;box-shadow: 0 2px 29px 0 rgba(0, 0, 0, 0.2);
+              ;padding:10px"></i>
+            </div>
+         </div>
+         <div id="second">
+            <div class="smalldiv" style="padding:30px 50px">
+               <p>Vastu Rating <span style="font-size: 18px">{{item.totalRating}}/10</span> </p>
+               <p>Excellent</p>
+            </div>
+         </div>
+         <div id="third">  <img src="assets/img/next_icon/next.png" id="right" style="width: 50px;
+            height: 50px;" routerLink="/propertyinner" > 
+         </div>
+      </div>
+      <!-- </div> -->
+      </div>
+   </section>
+   
+   <section class="cities_area ">
+         <div class="container-fluid tocover" style="width:100%;padding-top:20px;">
+            <div class="main_title">
+               <h2>Featured Projects </h2>
+            </div>
+            <div class="adjustdiv">
+               <div class="single_row">
+                  <img src="assets/img/path/icon1.png" id="left" class="adjust">
+                  <span class="Lorem-Ipsum-Paldi-Copy-2">
+                     <h4 >Lorem Ipsum</h4>
+                     <p style="font-size: 14px">Paldi</p>
+                  </span>
+                  <img class="img-fluid imagewidth" src="assets/img/property1/bitmap-copy-5.jpg" alt="">
+                
+               </div>
+               <div class="single_row">
+                  <img src="assets/img/path/icon1.png" id="left" class="adjust"  >
+                  <span class="Lorem-Ipsum-Paldi-Copy-2 ">
+                     <h4 >Lorem Ipsum</h4>
+                     <p style="font-size: 14px">Praladnagar</p>
+                  </span>
+                  <img class="img-fluid imagewidth" src="assets/img/property2/bitmap.jpg" alt="">
+                
+               </div>
+               <div class="single_row">
+                  <img src="assets/img/path/icon1.png" id="left" class="adjust">
+                  <span class="Lorem-Ipsum-Paldi-Copy-2">
+                     <h4>Lorem Ipsum</h4>
+                     <p style="font-size: 14px">Paldi</p>
+                  </span>
+                  <img class="img-fluid imagewidth" src="assets/img/property3/bitmap.jpg" alt="">
+              
+               </div>
+               <div class="single_row">
+                  <img src="assets/img/path/icon1.png" id="left" class="adjust"  >
+                  <span class="Lorem-Ipsum-Paldi-Copy-2">
+                     <h4 >Lorem Ipsum</h4>
+                     <p style="font-size: 14px">Paldi</p>
+                  </span>
+                  <img class="img-fluid imagewidth" src="assets/img/property1/bitmap-copy-5.jpg" alt="">  
+                    
+               </div>
+               <div class="single_row">
+                  <img src="assets/img/path/icon1.png" id="left" class="adjust"  >
+                  <span class="Lorem-Ipsum-Paldi-Copy-2 ">
+                     <h4 >Lorem Ipsum</h4>
+                     <p style="font-size: 14px">Praladnagar</p>
+                  </span>
+                  <img class="img-fluid imagewidth" src="assets/img/property2/bitmap.jpg" alt="">
+               
+               </div>
+            </div>
+         </div>
+      </section>
+ <app-contactinfo></app-contactinfo>

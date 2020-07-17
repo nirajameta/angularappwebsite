@@ -1,0 +1,225 @@
+    <div class="split left">
+        <div class="centered4">
+            
+            <h2>Find a place that adds life to your mind, body and soul.</h2>
+            
+        </div>
+    </div>
+    
+    <div class="split right">
+            <img src="assets/img/final.png" alt="" routerLink="/home"  style="padding:10px 0 0 10px;cursor: pointer;">
+
+
+            <!-- <a> signup</a>
+            <a> login</a> -->
+            <!-- <div class="desktopview">     
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#fec9a9 !important;border-radius:20px;padding:0 10px">
+                
+                    <div class="navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    
+                    
+                        <li  class="nav-item1">
+                            <a  class="nav-link1" style="color:black" routerLinkActive="activecss1"  routerLink="/login/loginmode">Login</a>
+                        </li>
+            
+                        <li  class="nav-item" >
+                            <a  class="nav-link1" style="color:black" routerLinkActive="activecss1"  routerLink="/login/signup">Sign up</a>
+                        </li>
+                    </ul>
+                    </div>
+                </nav>
+                
+            </div> -->
+
+            <!-- <div class="mobileview">  
+                    <div style="width:60%;background-image: linear-gradient(295deg, #fec9a9, #ffdbc5); margin:0 auto;height:60px;line-height: 15px; border-radius: 20.5px;margin-top:5%">
+      
+                          <ul class="nav">
+                                  <li class="nav-item" style="padding:5px;margin-left:7px">
+                                    <a class="nav-link" routerLinkActive="activecss1" style="color:black" routerLink="/login/loginmode">Login</a>
+                                  </li>
+                                  <li class="nav-item" style="padding:5px 0">
+                                    <a class="nav-link" routerLinkActive="activecss1" style="color:black"  routerLink="/login/signup">Sign up</a>
+                                  </li>
+                          </ul>        
+                          
+                     </div> 
+       
+                     
+            </div> -->
+      
+
+            
+
+            
+
+            <div style="position:absolute;width:50%;top:40%;left:20%;transform: translateX(-20%);">
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="nav-item">
+                       <a class="nav-link active" data-toggle="pill" href="#home">Commercial</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" data-toggle="pill" href="#menu1">Residential</a>
+                    </li>
+                 </ul>
+                 <!-- Nav pills -->
+                 <!-- Tab panes -->
+                 <div class="tab-content">
+                    <div id="home" class="container tab-pane active">
+                      
+                            <form name="form" #f="ngForm" novalidate>
+
+      
+
+                                    <div class="row">
+                                          
+                                            <div class="col-sm-10">
+                                                <div class="form-group">
+                                                    <div id="input_container">
+                                                        <input type="text" id="input" class="place form-control" name="email1" placeholder="email" [(ngModel)]="login.email1" #email1="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email1.invalid }" required>
+                                                        <img src="assets/img/user_icon/group-4.png"  id="input_img">
+                                                    </div>
+                                                    <div *ngIf="f.submitted && email1.invalid" class="errormessage">
+                                                            <div *ngIf="email1.errors.required">User Name is required</div>
+                                                    </div>
+                                                </div>
+                                             </div> 
+                                
+                                    </div>
+                                
+                                
+                                    <div class="row">
+                                        <div class="col-sm-10">
+                                                <div id="input_container">
+                                                        <input type="text" placeholder="Password" id="input" class="place form-control" name="password1" [(ngModel)]="login.password1" #password1="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password1.invalid }" required>
+                                                        <img src="assets/img/key_icon/key.png"  id="input_img">
+                                                </div>
+                                                <div *ngIf="f.submitted && password1.invalid" class="errormessage">
+                                                    <div *ngIf="password1.errors.required">Password is required</div>
+                                                </div>
+                                        </div>
+                                
+                                        <div class="col-sm-2">
+                                                <div class="form-group buttonarrow">
+                                                    <button (click)="onSubmit()" style="margin-top:6px;background-color: #ffffff;border:1px solid black;line-height: 1.4" class="btn btn-default shiftbtn"> <span class="fa fa-long-arrow-right"></span></button> 
+                                                </div>  
+                                                <div class="form-group mobileview">
+                                                        <button style="margin-left: 100px;margin-top:8px;background-color: #ffffff;border:1px solid black;line-height: 1.4" class="btn btn-default"> Submit</button> 
+                                                </div>    
+                                        </div>
+                                    
+                                
+                                    </div>
+                                    <div *ngIf="edited" class="errormessage">
+                                            <strong>{{arrayvalue}}</strong>
+                                    </div>
+                                </form>
+                                
+                    </div>
+                    <div id="menu1" class="container tab-pane fade">
+                                   
+                           
+ <form name="form" (ngSubmit)="f.form.valid && onregisterSubmit()" #f="ngForm" novalidate>
+        <div *ngIf="edited" class="errormessage">
+            <strong>{{arrayvalue}}</strong>
+        </div>
+        <div class="row">
+            
+                <div class="col-sm-10">
+                    <div id="input_container">
+                        <input type="text" placeholder="E-mail ID" id="input" class="place form-control" name="email" [(ngModel)]="register.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email>
+                        <img src="assets/img/post/group-5@2x.png"  id="input_img">
+                    </div>
+                    <div *ngIf="f.submitted && email.invalid" class="errormessage">
+                            <div *ngIf="email.errors.required">Email is required</div>
+                            <div *ngIf="email.errors.email">Email must be a valid email address</div>
+                    </div>
+                </div>
+         </div>
+        
+         <div class="row">
+            <div class="col-sm-10">
+                <div id="input_container">
+                    <input type="text" placeholder="Username" id="input" class="place form-control" name="username" [(ngModel)]="register.username" #username="ngModel" [ngClass]="{ 'is-invalid': f.submitted && username.invalid }" required>
+                    <img src="assets/img/user_img/user@2x.png"   id="input_img">
+                </div>
+                <div *ngIf="f.submitted && username.invalid" class="errormessage">
+                        <div *ngIf="username.errors.required">User Name is required</div>
+                        
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-sm-10">
+                <div id="input_container">
+                    <input type="text" placeholder="Password" id="input" class="place form-control" name="password" [(ngModel)]="register.password" #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required>
+                    <img src="assets/img/passord_icon/key@2x.png"  id="input_img">
+                </div>
+                <div *ngIf="f.submitted && password.invalid" class="errormessage">
+                        <div *ngIf="password.errors.required">Password is required</div>
+                        
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+                <div class="col-sm-12" style="padding-right: 5px">
+                    <select name="gender" class="form-control" style="width:100%;border-color:black;border-radius:0;font-size: 12px;padding-left:16px;color:black" [(ngModel)]="register.gender" #gender="ngModel" [ngClass]="{ 'is-invalid': f.submitted && gender.invalid }" required>
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+          
+        </div>
+        
+        
+        <div class="row">
+            <div class="col-sm-10">
+                <div id="input_container">
+                        <input type="number" placeholder="Mobile Number" id="input" pattern="\d*" class="place form-control"  minlength = "10" name="phone" [(ngModel)]="register.phone" #phone="ngModel" [ngClass]="{ 'is-invalid': f.submitted && phone.invalid }" maxlength = "10" required >
+                        <img src="assets/img/mobile/group-4@2x.png"  id="input_img">
+                </div>
+                <div *ngIf="f.submitted && phone.invalid" class="errormessage">
+                        <div *ngIf="phone.errors.required">Mobile Number is required</div>
+                        <div *ngIf="phone.errors.maxlength">Max 10 digits required</div>
+                        <div *ngIf="phone.errors.minlength">min 10 digits required</div>
+                       
+                        
+                </div>
+            </div>
+        
+            <div class="col-sm-2">
+                        <div class="form-group buttonarrow">
+                            <button (click)="onregisterSubmit()" style="margin-top:6px;background-color: #ffffff;border:1px solid black;line-height: 1.4;" class="btn btn-default shiftbtn"> <span class="fa fa-long-arrow-right"></span></button> 
+                        </div>  
+                        <div class="form-group mobileview">
+                                <button style="margin-left: 100px;margin-top:8px;background-color: #ffffff;border:1px solid black;line-height: 1.4" class="btn btn-default"> Submit</button> 
+                        </div>    
+            </div>
+        </div>
+     </form>   
+        
+        
+                    </div>
+                 </div>       
+            </div>
+
+            <div style="position:absolute;width:70%;bottom:1%;left:30%;transform: translateX(-25%);">
+                  <span class="loginfooter">*Lorem ipsum dolor sit amet, consectetur adipiscing elit, Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>  
+            </div>
+
+
+        
+                <!-- <h2>Tabs</h2>
+                <p>Click on the buttons inside the tabbed menu:</p> -->
+               
+
+            <!-- <img src="img_avatar.png" alt="Avatar man">
+            <h2>John Doe</h2>
+            <p>Some text here too.</p> -->
+
+            
+    </div>
